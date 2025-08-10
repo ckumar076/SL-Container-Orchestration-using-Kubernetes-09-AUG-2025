@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx-service
+  name: nginx-service
 spec:
   selector:
-    app: lbnginx
+    app: web
   ports:
   - protocol: TCP
     port: 80
-    nodePort: 30001
+    nodePort: 30004
   type: NodePort
